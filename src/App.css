@@ -1,0 +1,15 @@
+
+#root {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #2563eb;
+}
+
+p {
+  color: #555;
+}

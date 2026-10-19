@@ -1,0 +1,13 @@
+{
+  "blogs": [
+    {
+      "title": "My First Blog",
+      "body": "This is My first blog post.",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "title": "Learning React",
+      "body": "React helps us build user interfaces."
+    }
+  ]}

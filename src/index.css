@@ -1,0 +1,235 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  background: #f5f7fc;
+  color: #1e293b;
+  line-height: 1.6;
+}
+
+/* Header */
+.header {
+  background: #ffffff;
+  padding: 24px 7%;
+  border-bottom: 1px solid #e5eaf2;
+  box-shadow: 0 3px 15px rgba(15, 23, 42, 0.04);
+}
+
+.header h1 {
+  margin: 0 0 16px;
+  color: #4f46e5;
+  font-size: 30px;
+  font-weight: 750;
+  letter-spacing: -0.7px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+nav a {
+  color: #475569;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+/* Main content */
+.container {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 32px;
+  background: #ffffff;
+  border: 1px solid #e9edf5;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.04);
+}
+
+.container h2 {
+  margin-top: 0;
+  margin-bottom: 24px;
+  color: #172554;
+  font-size: 27px;
+  line-height: 1.3;
+}
+
+.container > p {
+  color: #475569;
+  line-height: 1.8;
+  overflow-wrap: anywhere;
+}
+
+/* Blog cards */
+.blog-card {
+  padding: 24px 0;
+  border-bottom: 1px solid #e8edf5;
+}
+
+.blog-card:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.blog-card h3 {
+  margin: 0 0 10px;
+  color: #273778;
+  font-size: 21px;
+  overflow-wrap: anywhere;
+}
+
+.blog-card p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.8;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+/* Links and actions */
+a {
+  color: #4f46e5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.actions a {
+  font-weight: 600;
+}
+
+/* Forms */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+label {
+  color: #334155;
+  font-weight: 600;
+  margin-top: 6px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #1e293b;
+  font: inherit;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.13);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #94a3b8;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* Buttons */
+button {
+  width: fit-content;
+  padding: 11px 18px;
+  border: none;
+  border-radius: 9px;
+  background: #4f46e5;
+  color: #ffffff;
+  cursor: pointer;
+  font: inherit;
+  font-weight: 600;
+  transition: background 0.2s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background: #4338ca;
+  transform: translateY(-1px);
+}
+
+button:focus-visible,
+a:focus-visible {
+  outline: 3px solid #a5b4fc;
+  outline-offset: 3px;
+}
+
+.delete-button {
+  background: #dc2626;
+}
+
+.delete-button:hover {
+  background: #b91c1c;
+}
+
+.secondary-button {
+  background: #64748b;
+}
+
+.secondary-button:hover {
+  background: #475569;
+}
+
+/* Mobile responsive design */
+@media (max-width: 600px) {
+  .header {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 25px;
+  }
+
+  nav {
+    gap: 18px;
+  }
+
+  .container {
+    margin: 20px 12px;
+    padding: 22px 18px;
+    border-radius: 12px;
+  }
+
+  .container h2 {
+    font-size: 23px;
+  }
+
+  .blog-card h3 {
+    font-size: 19px;
+  }
+
+  .actions {
+    gap: 12px;
+  }
+}
