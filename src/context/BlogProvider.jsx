@@ -19,9 +19,31 @@ export function BlogProvider({ children }) {
   }, []);
 
   // Fetch blogs when the provider loads
-  useEffect(() => {
-    fetchBlogs();
-  }, [fetchBlogs]);
+ 
+useEffect(() => {
+  let ignore = false;
+
+  const loadBlogs = async () => {
+    try {
+      const response = await axios.get(API);
+
+      if (!ignore) {
+        setBlogs(response.data);
+      }
+    } catch (error) {
+      if (!ignore) {
+        console.error("Error fetching blogs:", error);
+      }
+    }
+  };
+
+  loadBlogs();
+
+  return () => {
+    ignore = true;
+  };
+}, []);
+
 
   // CREATE: Add a new blog
   const addBlog = async (newBlog) => {

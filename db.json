@@ -1,13 +1,34 @@
 {
   "blogs": [
     {
-      "title": "My First Blog",
-      "body": "This is My first blog post.",
-      "id": "1"
+      "title": "My First Blog Post",
+      "body": "Hello everyone! Welcome to my new blog app. I am excited to start sharing my thoughts, ideas, and projects here. Stay tuned for more updates!!",
+      "id": "6Ey8D0stRHs"
     },
     {
-      "id": "2",
-      "title": "Learning React",
-      "body": "React helps us build user interfaces."
+      "title": "Getting Started with React and Vite",
+      "body": "React combined with Vite makes setting up a modern frontend application incredibly fast and enjoyable. The lightning-fast Hot Module Replacement (HMR) allows you to see your changes instantly without waiting around. Highly recommended for any new web project!",
+      "id": "pmAOfkpuiXk"
+    },
+    {
+      "title": "3 Habits for a More Productive Morning",
+      "body": "Starting your morning right sets the tone for the entire day. Try waking up just 15 minutes earlier, avoiding your phone for the first half hour, and taking a few moments to plan your top three goals. Small changes can lead to huge results!",
+      "id": "gflGU37JxXs"
+    },
+    {
+      "title": "Why You Should Plan Your Next Trip Solo",
+      "body": "Traveling alone might feel intimidating at first, but it is one of the most liberating experiences you can have. It forces you out of your comfort zone, lets you move at your own pace, and opens the door to meeting amazing new people from all over the world.",
+      "id": "Fbiwg3S_9Nc"
+    },
+    {
+      "title": "The Benefits of Daily Stretching",
+      "body": "Taking just 10 minutes a day to stretch can completely transform how your body feels. It improves your posture, increases flexibility, and helps relieve the muscle tension that builds up from sitting at a desk all day. Your body will thank you!",
+      "id": "ocs-Pb1zVMw"
+    },
+    {
+      "title": "Simple Tips for Better Home Cooking",
+      "body": "You don't need to be a professional chef to make delicious meals at home. Focus on mastering the basics: season your food properly as you cook, always taste-test before serving, and invest in one really sharp chef's knife. It makes all the difference!",
+      "id": "cS2onaB_9xg"
     }
-  ]}
+  ]
+}
